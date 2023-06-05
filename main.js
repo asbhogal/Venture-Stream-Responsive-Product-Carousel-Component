@@ -20,7 +20,8 @@ class ProductCard extends HTMLElement {
     this.querySelector("img").src = this.getAttribute("src");
     this.querySelector("img").alt = this.getAttribute("alt");
     this.querySelector("a").href = this.getAttribute("href");
-    this.querySelector("a").classList.add("flex flex-col no-underline");
+    this.querySelector("a").classList.add("flex", "flex-col", "no-underline");
+    this.querySelector("h3").classList.add("text-lg");
   }
 }
 

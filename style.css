@@ -29,6 +29,6 @@
   outline: 1px solid red;
 }
 
-.product-link {
-  text-decoration: none;
+.container-title {
+  font-size: clamp(1.75rem, 1.6562rem + 0.382vw, 2rem);
 }
