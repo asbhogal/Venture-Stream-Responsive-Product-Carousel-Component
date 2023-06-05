@@ -26,6 +26,7 @@
 
 * {
   font-family: "Plus Jakarta Sans", sans-serif;
+  outline: 1px solid red;
 }
 
 .product-link {
