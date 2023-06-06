@@ -17,8 +17,14 @@ const dragging = (e) => {
   carousel.scrollLeft = carousel.scrollLeft - scrollPos;
 };
 
+const dragStop = (e) => {
+  isDragging = false;
+  carousel.classList.remove("dragging");
+};
+
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
 
 // Additional event listeners to handle mouseup and mouseleave events
 document.addEventListener("mouseup", () => {

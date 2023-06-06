@@ -70,7 +70,7 @@
   display: none;
 }
 
-.dragging a {
+.product-card .dragging {
   scroll-snap-align: start;
   scroll-behavior: auto;
   cursor: grab;
