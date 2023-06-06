@@ -9,7 +9,6 @@ A responsive product carousel component created from mockups and assets provided
 This has been created using HTML Web Components (created using OOP), vanilla JS, Tailwind CSS and Vite.
 
 <strong>:heavy_check_mark: Features:</strong><br>
-<br>
 
 - Design faithful to mockups
 - Web Components used for product cards
