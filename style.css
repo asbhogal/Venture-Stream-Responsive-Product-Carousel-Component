@@ -62,6 +62,17 @@
   display: flex;
 }
 
+.carousel {
+  scroll-snap-type: x mandatory;
+}
+
 .carousel::-webkit-scrollbar {
   display: none;
+}
+
+.dragging a {
+  scroll-snap-align: start;
+  scroll-behavior: auto;
+  cursor: grab;
+  user-select: none;
 }
