@@ -4,8 +4,9 @@ const template = document.createElement("template");
 
 template.innerHTML = `
     <a class="product-link" target="_blank">
-        <img></img>
-        <h3></h3>
+      <img class="product-image"></img>
+      <h3 class="product-title"></h3>
+      <img class="product-arrow"></img>
     </a>
     `;
 
@@ -26,7 +27,7 @@ class ProductCard extends HTMLElement {
       "hover:scale-105",
       "transition"
     );
-    this.querySelector("h3").classList.add("text-lg");
+    this.querySelector("img").classList.add("max-w-none");
   }
 }
 

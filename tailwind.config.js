@@ -10,7 +10,7 @@ export default {
     }, */
     extend: {
       maxWidth: {
-        "8xl": "1440px",
+        "8xl": "2560px",
       },
     },
   },
