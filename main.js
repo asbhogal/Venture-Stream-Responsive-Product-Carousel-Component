@@ -6,7 +6,9 @@ template.innerHTML = `
     <a class="product-link" target="_blank">
       <img class="product-image"></img>
       <h3 class="product-title"></h3>
-      <img class="product-arrow"></img>
+      <div class="product-arrow-container">
+        <img class="product-arrow" src="/icons/Arrow.svg"></img>
+      </div>
     </a>
     `;
 
@@ -28,6 +30,24 @@ class ProductCard extends HTMLElement {
       "transition"
     );
     this.querySelector("img").classList.add("max-w-none");
+    this.querySelector(".product-arrow-container").classList.add(
+      "hidden",
+      "justify-center",
+      "items-center",
+      "h-10",
+      "w-10",
+      "bg-white",
+      "rounded-full",
+      "absolute",
+      "right-[30px]",
+      "bottom-[54.25px]",
+      "group-hover:flex"
+    );
+    this.querySelector(".product-arrow").classList.add(
+      "flex",
+      "h-[11.64px]",
+      "w-[12.30px]"
+    );
   }
 }
 

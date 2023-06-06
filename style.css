@@ -54,24 +54,15 @@
   }
 }
 
-.product-arrow {
-  background-image: url(public/icons/Arrow.svg);
-  width: 50%;
-  height: 50%;
-  background-repeat: no-repeat;
-  display: flex;
-}
-
-.carousel {
+/* .carousel {
   scroll-snap-type: x mandatory;
-}
+} */
 
 .carousel::-webkit-scrollbar {
   display: none;
 }
 
 .product-card .dragging {
-  scroll-snap-align: start;
   scroll-behavior: auto;
   cursor: grab;
   user-select: none;
