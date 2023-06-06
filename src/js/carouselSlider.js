@@ -1,5 +1,7 @@
 const carousel = document.querySelector(".carousel");
-let isDragging = false;
+let isDragging = false,
+  startX,
+  startScrollLeft;
 let startPos = 0;
 let currentPos = 0;
 
@@ -7,14 +9,17 @@ const dragStart = (e) => {
   isDragging = true;
   carousel.classList.add("dragging");
   startPos = e.pageX - carousel.offsetLeft;
+  startX = e.pageX;
+  startScrollLeft = carousel.scrollLeft;
 };
 
 const dragging = (e) => {
   if (!isDragging) return;
-  e.preventDefault(); // Prevent default text selection behavior
+  e.preventDefault();
   currentPos = e.pageX - carousel.offsetLeft;
   const scrollPos = currentPos - startPos;
   carousel.scrollLeft = carousel.scrollLeft - scrollPos;
+  carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
 };
 
 const dragStop = (e) => {
@@ -26,7 +31,6 @@ carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 
-// Additional event listeners to handle mouseup and mouseleave events
 document.addEventListener("mouseup", () => {
   isDragging = false;
 });
