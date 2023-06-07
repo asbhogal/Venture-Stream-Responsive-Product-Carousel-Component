@@ -26,6 +26,7 @@ class ProductCard extends HTMLElement {
     this.querySelector(".product-link").classList.add(
       "flex",
       "flex-col",
+      "gap-[20px]",
       "no-underline",
       "hover:scale-105",
       "transition"
