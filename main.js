@@ -1,14 +1,5 @@
 import "./style.css";
 
-const initialWidth = 1920; // Initial device width in pixels
-const scaledWidth = 393; // Scaled-down device width in pixels
-
-const topRatio = 40 / 100; // Calculate the ratio for the top value
-const leftRatio = 35 / 140; // Calculate the ratio for the left value
-
-const topValue = `${topRatio * 100}vw`; // Convert the ratio to vw unit
-const leftValue = `${leftRatio * 100}vw`; // Convert the ratio to vw unit
-
 const template = document.createElement("template");
 
 template.innerHTML = `
@@ -27,18 +18,23 @@ class ProductCard extends HTMLElement {
 
     this.appendChild(template.content.cloneNode(true));
 
-    this.querySelector("h3").textContent = this.getAttribute("title");
-    this.querySelector("img").src = this.getAttribute("src");
-    this.querySelector("img").alt = this.getAttribute("alt");
-    this.querySelector("a").href = this.getAttribute("href");
-    this.querySelector("a").classList.add(
+    this.querySelector(".product-title").textContent =
+      this.getAttribute("title");
+    this.querySelector(".product-image").src = this.getAttribute("src");
+    this.querySelector(".product-image").alt = this.getAttribute("alt");
+    this.querySelector(".product-link").href = this.getAttribute("href");
+    this.querySelector(".product-link").classList.add(
       "flex",
       "flex-col",
       "no-underline",
       "hover:scale-105",
       "transition"
     );
-    this.querySelector("img").classList.add("max-w-none");
+    this.querySelector(".product-image").classList.add(
+      "max-w-none",
+      "w-[287px]",
+      "sm:w-[396px]"
+    );
     this.querySelector(".product-arrow-container").classList.add(
       "hidden",
       "justify-center",
