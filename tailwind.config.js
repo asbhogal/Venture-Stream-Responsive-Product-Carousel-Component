@@ -3,7 +3,7 @@ export default {
   content: ["*.{html,js}"],
   theme: {
     screens: {
-      sm: "475px",
+      sm: "476px",
     },
     extend: {
       maxWidth: {
