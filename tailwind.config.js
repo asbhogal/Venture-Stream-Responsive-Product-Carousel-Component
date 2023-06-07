@@ -2,7 +2,9 @@
 export default {
   content: ["*.{html,js}"],
   theme: {
-    screens: {},
+    screens: {
+      sm: "475px",
+    },
     extend: {
       maxWidth: {
         "8xl": "2560px",

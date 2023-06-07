@@ -40,14 +40,12 @@
 @media only screen and (min-width: 394px) {
   .container {
     top: 100px;
-    left: 140px;
   }
 }
 
 @media only screen and (max-width: 394px) {
   .container {
     top: 40px;
-    left: 37px;
   }
   .product-image {
     width: 287px;
@@ -62,8 +60,12 @@
   display: none;
 }
 
+.product-card {
+  cursor: grab;
+}
+
 .product-card .dragging {
   scroll-behavior: auto;
-  cursor: grab;
+  cursor: grabbing !important;
   user-select: none;
 }
