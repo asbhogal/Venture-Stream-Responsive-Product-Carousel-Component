@@ -31,6 +31,10 @@ class ProductCard extends HTMLElement {
       "hover:scale-105",
       "transition"
     );
+    this.querySelector(".product-title").classList.add(
+      "font-medium",
+      "text-lg"
+    );
     this.querySelector(".product-image").classList.add(
       "max-w-none",
       "w-[287px]",
@@ -46,7 +50,7 @@ class ProductCard extends HTMLElement {
       "rounded-full",
       "absolute",
       "right-[30px]",
-      "bottom-[54.25px]",
+      "bottom-[74.25px]",
       "group-hover:flex"
     );
     this.querySelector(".product-arrow").classList.add(
