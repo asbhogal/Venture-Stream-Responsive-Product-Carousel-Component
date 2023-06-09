@@ -55,8 +55,8 @@ class ProductCard extends HTMLElement {
     );
     this.querySelector(".product-arrow").classList.add(
       "flex",
-      "h-[11.64px]",
-      "w-[12.30px]"
+      "h-[8.73px]",
+      "w-[9.23px]"
     );
   }
 }
