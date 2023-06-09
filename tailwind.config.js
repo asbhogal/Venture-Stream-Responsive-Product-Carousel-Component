@@ -4,6 +4,7 @@ export default {
   theme: {
     screens: {
       sm: "476px",
+      md: "620px",
     },
     extend: {
       maxWidth: {
