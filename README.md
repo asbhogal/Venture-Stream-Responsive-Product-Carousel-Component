@@ -8,7 +8,7 @@
 
 A responsive product carousel component created from mockups and assets provided as part of the interview process for Junior Developer at Venture Stream
 
-This has been created using HTML Web Components (created using OOP), vanilla JS, Tailwind CSS and Vite.
+This has been built using Web Components (created using OOP), vanilla JS, Tailwind CSS and Vite.
 
 <strong>:heavy_check_mark: Features:</strong><br>
 
